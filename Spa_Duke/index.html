@@ -538,7 +538,7 @@ const SHELL_FINISHES = {
     basecolor: versioned(MATERIAL_ROOT + 'shell/midnight_opal.jpg')
   },
   white-gloss: {
-    name: 'Espresso',
+    name: 'White Gloss',
     basecolor: versioned(MATERIAL_ROOT + 'shell/high_gloss_white.jpg')
   },
   'ocean-wave': {
@@ -980,7 +980,7 @@ async function applyFinish(type, key) {
       const shellProfile = {
         silver_marble: { roughness: 0.22, env: 1.45, clearcoat: 0.10, clearcoatRoughness: 0.18 },
         midnight_opal: { roughness: 0.24, env: 1.25, clearcoat: 0.10, clearcoatRoughness: 0.20 },
-        expresso: { roughness: 0.28, env: 1.10, clearcoat: 0.08, clearcoatRoughness: 0.22 },
+        white_gloss: { roughness: 0.28, env: 1.10, clearcoat: 0.08, clearcoatRoughness: 0.22 },
         ocean_wave: { roughness: 0.24, env: 1.30, clearcoat: 0.10, clearcoatRoughness: 0.20 }
       };
       const profile = shellProfile[key] || shellProfile.silver_marble;
